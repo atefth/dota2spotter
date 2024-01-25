@@ -2,4 +2,3 @@ pillow
 numpy
 requests
 pyautogui
-image-match

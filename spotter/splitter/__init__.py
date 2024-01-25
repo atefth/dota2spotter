@@ -17,7 +17,8 @@ padding = 4
 
 
 # Match hero avatar
-async def extract_avatars(team, img):
+# async def extract_avatars(team, img):
+def extract_avatars(team, img):
     heroes = []
     j = 0
     # hero_height = img.height
@@ -42,9 +43,12 @@ async def extract_avatars(team, img):
 
 
 # Probe and extract currently picked heroes
-async def probe(source):
+# async def probe(source):
+def probe(source):
     img = Image.open(source)
     normalized = img.resize((1920, 1080))
-    radiant_heroes = await extract_avatars("radiant", normalized)
-    dire_heroes = await extract_avatars("dire", normalized)
+    # radiant_heroes = await extract_avatars("radiant", normalized)
+    # dire_heroes = await extract_avatars("dire", normalized)
+    radiant_heroes = extract_avatars("radiant", normalized)
+    dire_heroes = extract_avatars("dire", normalized)
     return radiant_heroes, dire_heroes

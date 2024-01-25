@@ -26,3 +26,5 @@ def create_data_set():
         avatar = Image.open(image_stream)
         path_to_assets = f'{assets_path}/heroes/{avatar_name}.png'
         avatar.save(path_to_assets)
+
+# FOR /R "." %f in (*.png) DO "C:\Users\ateft\AppData\Roaming\nvm\v21.6.1\node_modules\pngcrush\node_modules\.bin\pngcrush.cmd" -ow -rem allb -reduce %f
