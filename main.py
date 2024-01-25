@@ -7,7 +7,7 @@ from spotter import scrapper
 from spotter import matcher
 
 # Read image
-src = f'{assets_path}/scenarios/three.jpeg'
+src = f'{assets_path}/scenarios/one.jpeg'
 
 
 async def main():
